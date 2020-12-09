@@ -79,10 +79,6 @@ body {
     }
 }
 
-
-
-
-
 /*--Styling for fadding bootstrap Carousel--*/
 #myCarousel {
   position: relative;
@@ -109,12 +105,15 @@ body {
       left: 72px;
       top: 50%;
       transform: translateY(-50%);
-      justify-content: center;
       width: 2px;
-      flex-direction: column;
       margin: 0;
       height: 500px;
       background: rgba(0, 0, 0, 0.199);
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       align-items: center;
+       align-content: center;
       li,
       li.active {
           float: left;
@@ -129,31 +128,27 @@ body {
           background: $my-black;
       }
   }
-
   .carousel-control-prev,
   .carousel-control-next {
       position: absolute;
-      color: black;
-      font-size: 32px;
-      width: 5%;
+      color: $my-black;
       height: 10%;
       top: 90%;
+      text-align: center;
+      padding: 0 24px;
   }
-
-
   .carousel-control-prev:hover,
   .carousel-control-next:hover,
   .carousel-control-prev:focus,
   .carousel-control-next:focus {
-      color: #000;
+      color: $my-black;
   }
   .carousel-control-prev {
-      left: 60px;
+      left: 64px;
   }
 
   .carousel-control-next {
-      right: 60px;
-  }
+      right: 64px;
 }
 
 .left-col, .right-col {

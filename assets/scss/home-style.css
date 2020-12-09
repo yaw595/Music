@@ -106,17 +106,24 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 2px;
+  margin: 0;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.199);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0;
-  height: 500px;
-  background: rgba(0, 0, 0, 0.199);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #myCarousel .carousel-indicators li,
@@ -137,26 +144,36 @@ body {
 #myCarousel .carousel-control-prev,
 #myCarousel .carousel-control-next {
   position: absolute;
-  color: black;
-  font-size: 32px;
-  width: 5%;
+  color: #0e0909;
   height: 10%;
   top: 90%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 124px;
 }
 
 #myCarousel .carousel-control-prev:hover,
 #myCarousel .carousel-control-next:hover,
 #myCarousel .carousel-control-prev:focus,
 #myCarousel .carousel-control-next:focus {
-  color: #000;
+  color: #0e0909;
 }
 
 #myCarousel .carousel-control-prev {
-  left: 60px;
+  left: 72px;
+}
+
+#myCarousel .carousel-control-prev i {
+  font-size: 56px;
 }
 
 #myCarousel .carousel-control-next {
-  right: 60px;
+  right: 72px;
+}
+
+#myCarousel .carousel-control-next i {
+  font-size: 56px;
 }
 
 .left-col, .right-col {
