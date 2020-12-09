@@ -1,1 +1,241 @@
-/* No CSS *//*# sourceMappingURL=home-style.css.map */
+@font-face {
+  font-family: 'Blacksword';
+  src: url("../../fonts/Blacksword.ttf");
+  src: url("../../fonts/Blacksword.eot");
+  src: url("../../fonts/Blacksword.woff") format("woff");
+  src: url("../../fonts/Blacksword.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../../fonts/ProximaNova-Regular.ttf");
+  src: url("../../fonts/ProximaNova-Regular.ttf");
+  src: url("../../fonts/ProximaNova-Regular.woff") format("woff");
+  src: url("../../fonts/ProximaNova-Regular.woff2") format("woff2");
+}
+
+body {
+  font-family: 'ProximaNova',Arial, Helvetica, sans-serif;
+  padding: 0;
+  overflow-x: hidden !important;
+}
+
+.navbar {
+  padding: 24px 72px;
+  background: transparent !important;
+}
+
+.navbar .navbar-brand {
+  color: #0e0909;
+  font-size: 32px;
+}
+
+.nav-item {
+  margin: 0 24px;
+}
+
+.nav-item .nav-link {
+  color: #0e0909;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.nav-item .search-icon {
+  font-size: 20px;
+}
+
+.social {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 72px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 999;
+  height: 240px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social a {
+  font-size: 14px;
+  color: #0e0909;
+  text-decoration: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*--Styling for fadding bootstrap Carousel--*/
+#myCarousel {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bcb2a6), to(#9fa49e));
+  background: linear-gradient(#bcb2a6, #9fa49e);
+  height: 100vh;
+}
+
+#myCarousel .carousel-inner .carousel-item {
+  height: 100vh;
+  width: 100%;
+  background: url("/assets/imgs/backgrounds/golden-canon-grid-specs-1920.png") no-repeat;
+  background-size: cover;
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+#myCarousel .carousel-inner .carousel-item .carousel-caption {
+  left: 0;
+  top: 24%;
+  right: 0;
+  text-align: left !important;
+  padding: 0 15%;
+}
+
+#myCarousel .carousel-indicators {
+  position: absolute  !important;
+  left: 72px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.199);
+}
+
+#myCarousel .carousel-indicators li,
+#myCarousel .carousel-indicators li.active {
+  float: left;
+  height: 33.3%;
+  width: 2px;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+}
+
+#myCarousel .carousel-indicators li.active {
+  background: #0e0909;
+}
+
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+  position: absolute;
+  color: black;
+  font-size: 32px;
+  width: 5%;
+  height: 10%;
+  top: 90%;
+}
+
+#myCarousel .carousel-control-prev:hover,
+#myCarousel .carousel-control-next:hover,
+#myCarousel .carousel-control-prev:focus,
+#myCarousel .carousel-control-next:focus {
+  color: #000;
+}
+
+#myCarousel .carousel-control-prev {
+  left: 60px;
+}
+
+#myCarousel .carousel-control-next {
+  right: 60px;
+}
+
+.left-col, .right-col {
+  position: relative;
+  top: 49%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.left-col {
+  margin-left: -50px;
+}
+
+.left-col h4 {
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 36px 0;
+  letter-spacing: 2px;
+}
+
+.left-col .album-title {
+  font-family: 'Blacksword',fantasy;
+  color: #151d2a;
+  font-size: 72px;
+  font-weight: 900px;
+  margin: 32px 0;
+}
+
+.left-col .btn-lg {
+  background: #1c1b25;
+  color: #fff;
+  font-size: 14px;
+  margin: 56px 0;
+  padding: 24px 56px;
+  border-radius: 0  !important;
+  letter-spacing: 5px;
+}
+
+.left-col .btn-lg:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.right-col {
+  margin-top: -20%;
+  margin-left: -2px;
+}
+
+.right-col .bio-div {
+  margin: 0 0 64px 0;
+}
+
+.right-col .title {
+  font-weight: 12px;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.right-col .info {
+  font-size: 18px;
+  color: #0e0909;
+  line-height: 24px;
+  font-weight: bolder;
+}
+
+.artist-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.artist-image img {
+  width: 68%;
+}
+/*# sourceMappingURL=home-style.css.map */
