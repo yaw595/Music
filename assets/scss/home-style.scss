@@ -143,7 +143,7 @@ body {
     position: absolute;
     color: $my-black;
     top: 90%;
-    width: 120px;
+    width: 100px;
     justify-content: space-between;
     &:focus {
         outline: 0 !important;
@@ -151,7 +151,7 @@ body {
     }
     #prev,
     #next {
-        font-size: 32px;
+        font-size: 40px;
     }
 }
 
