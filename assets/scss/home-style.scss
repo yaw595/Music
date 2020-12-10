@@ -145,10 +145,13 @@ body {
     top: 90%;
     width: 120px;
     justify-content: space-between;
-}
-
-#prev, #next {
-    font-size: 32px;
+    &:focus {
+        outline: none !important;
+    }
+    #prev,
+    #next {
+        font-size: 32px;
+    }
 }
 
 
