@@ -151,6 +151,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-weight: 800;
 }
 
 .carousel-control-prev:focus,
