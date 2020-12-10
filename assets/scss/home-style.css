@@ -155,7 +155,9 @@ body {
 
 .carousel-control-prev:focus,
 .carousel-control-next:focus {
-  outline: none !important;
+  outline: 0 !important;
+  -webkit-box-shadow: 0 !important;
+          box-shadow: 0 !important;
 }
 
 .carousel-control-prev #prev,

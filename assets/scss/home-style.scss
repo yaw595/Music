@@ -146,7 +146,8 @@ body {
     width: 120px;
     justify-content: space-between;
     &:focus {
-        outline: none !important;
+        outline: 0 !important;
+        box-shadow: 0 !important;
     }
     #prev,
     #next {
