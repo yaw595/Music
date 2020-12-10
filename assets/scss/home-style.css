@@ -153,7 +153,15 @@ body {
           justify-content: space-between;
 }
 
-#prev, #next {
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none !important;
+}
+
+.carousel-control-prev #prev,
+.carousel-control-prev #next,
+.carousel-control-next #prev,
+.carousel-control-next #next {
   font-size: 32px;
 }
 
