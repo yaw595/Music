@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: 'ProximaNova',Arial, Helvetica, sans-serif;
+  font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
   padding: 0;
   overflow-x: hidden !important;
 }
@@ -100,8 +100,8 @@ body {
   padding: 0 15%;
 }
 
-#myCarousel .carousel-indicators {
-  position: absolute  !important;
+.carousel-indicators {
+  position: absolute !important;
   left: 72px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -126,8 +126,8 @@ body {
       align-content: center;
 }
 
-#myCarousel .carousel-indicators li,
-#myCarousel .carousel-indicators li.active {
+.carousel-indicators li,
+.carousel-indicators li.active {
   float: left;
   height: 33.3%;
   width: 2px;
@@ -137,46 +137,42 @@ body {
   background: transparent;
 }
 
-#myCarousel .carousel-indicators li.active {
+.carousel-indicators li.active {
   background: #0e0909;
 }
 
-#myCarousel .carousel-control-prev,
-#myCarousel .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
   position: absolute;
   color: #0e0909;
-  height: 10%;
   top: 90%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 124px;
+  width: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-#myCarousel .carousel-control-prev:hover,
-#myCarousel .carousel-control-next:hover,
-#myCarousel .carousel-control-prev:focus,
-#myCarousel .carousel-control-next:focus {
+#prev, #next {
+  font-size: 32px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
   color: #0e0909;
 }
 
-#myCarousel .carousel-control-prev {
-  left: 72px;
+.carousel-control-prev {
+  left: 5%;
 }
 
-#myCarousel .carousel-control-prev i {
-  font-size: 56px;
+.carousel-control-next {
+  right: 5%;
 }
 
-#myCarousel .carousel-control-next {
-  right: 72px;
-}
-
-#myCarousel .carousel-control-next i {
-  font-size: 56px;
-}
-
-.left-col, .right-col {
+.left-col,
+.right-col {
   position: relative;
   top: 49%;
   -webkit-transform: translateY(-50%);
@@ -196,7 +192,7 @@ body {
 }
 
 .left-col .album-title {
-  font-family: 'Blacksword',fantasy;
+  font-family: 'Blacksword', fantasy;
   color: #151d2a;
   font-size: 72px;
   font-weight: 900px;
@@ -209,7 +205,7 @@ body {
   font-size: 14px;
   margin: 56px 0;
   padding: 24px 56px;
-  border-radius: 0  !important;
+  border-radius: 0 !important;
   letter-spacing: 5px;
 }
 

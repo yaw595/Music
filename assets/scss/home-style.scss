@@ -1,6 +1,6 @@
 $my-black: #0e0909;
 $btn-bg: #1c1b25;
-$btn-color: #fff; 
+$btn-color: #fff;
 $album-black: #151d2a;
 $label-color: #333;
 $back-gadient: linear-gradient(#bcb2a6, #9fa49e);
@@ -17,7 +17,7 @@ $back-gadient: linear-gradient(#bcb2a6, #9fa49e);
 }
 
 
-@font-face{
+@font-face {
     font-family: 'ProximaNova';
     src: url('../../fonts/ProximaNova-Regular.ttf');
     src: url('../../fonts/ProximaNova-Regular.ttf');
@@ -28,7 +28,7 @@ $back-gadient: linear-gradient(#bcb2a6, #9fa49e);
 
 
 body {
-    font-family: 'ProximaNova',Arial, Helvetica, sans-serif;
+    font-family: 'ProximaNova', Arial, Helvetica, sans-serif;
     padding: 0;
     overflow-x: hidden !important;
 }
@@ -46,6 +46,7 @@ body {
 
 .nav-item {
     margin: 0 24px;
+
     .nav-link {
         color: $my-black;
         font-weight: 500;
@@ -71,6 +72,7 @@ body {
     z-index: 999;
     height: 240px;
     justify-content: space-between;
+
     a {
         font-size: 14px;
         color: $my-black;
@@ -81,78 +83,91 @@ body {
 
 /*--Styling for fadding bootstrap Carousel--*/
 #myCarousel {
-  position: relative;
-  background: $back-gadient;
-  height: 100vh;
-  .carousel-inner {
-     .carousel-item {
-          height: 100vh;
-          width: 100%;
-          background: url('/assets/imgs/backgrounds/golden-canon-grid-specs-1920.png') no-repeat;
-          background-size: cover;
-          transition: ease-in-out 0.5s;
-          .carousel-caption{
-              left: 0;
-              top: 24%;
-              right: 0;
-              text-align: left !important;
-              padding: 0 15%;
-          }
-     }
-    
-  .carousel-indicators {
-      position: absolute  !important;
-      left: 72px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 2px;
-      margin: 0;
-      height: 500px;
-      background: rgba(0, 0, 0, 0.199);
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-       align-items: center;
-       align-content: center;
-      li,
-      li.active {
-          float: left;
-          height: 33.3%;
-          width: 2px;
-          margin: 0;
-          border-radius: 0;
-          border: 0;
-          background: transparent;
-      }
-      li.active {
-          background: $my-black;
-      }
-  }
-}
-  .carousel-control-prev,
-  .carousel-control-next {
-      position: absolute;
-      color: $my-black;
-      height: 10%;
-      top: 90%;
-      text-align: center;
-      padding: 0 24px;
-  }
-  .carousel-control-prev:hover,
-  .carousel-control-next:hover,
-  .carousel-control-prev:focus,
-  .carousel-control-next:focus {
-      color: $my-black;
-  }
-  .carousel-control-prev {
-      left: 64px;
-  }
+    position: relative;
+    background: $back-gadient;
+    height: 100vh;
 
-  .carousel-control-next {
-      right: 64px;
+    .carousel-inner {
+        .carousel-item {
+            height: 100vh;
+            width: 100%;
+            background: url('/assets/imgs/backgrounds/golden-canon-grid-specs-1920.png') no-repeat;
+            background-size: cover;
+            transition: ease-in-out 0.5s;
+
+            .carousel-caption {
+                left: 0;
+                top: 24%;
+                right: 0;
+                text-align: left !important;
+                padding: 0 15%;
+            }
+        }
+    }
 }
 
-.left-col, .right-col {
+.carousel-indicators {
+    position: absolute !important;
+    left: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    margin: 0;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.199);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    li,
+    li.active {
+        float: left;
+        height: 33.3%;
+        width: 2px;
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+        background: transparent;
+    }
+
+    li.active {
+        background: $my-black;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    color: $my-black;
+    top: 90%;
+    width: 120px;
+    justify-content: space-between;
+}
+
+#prev, #next {
+    font-size: 32px;
+}
+
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    color: $my-black;
+}
+
+.carousel-control-prev {
+    left: 5%;
+}
+
+.carousel-control-next {
+    right: 5%;
+}
+
+.left-col,
+.right-col {
     position: relative;
     top: 49%;
     transform: translateY(-50%);
@@ -160,6 +175,7 @@ body {
 
 .left-col {
     margin-left: -50px;
+
     h4 {
         color: $label-color;
         font-size: 18px;
@@ -167,21 +183,24 @@ body {
         margin: 36px 0;
         letter-spacing: 2px;
     }
+
     .album-title {
-        font-family: 'Blacksword',fantasy;
+        font-family: 'Blacksword', fantasy;
         color: $album-black;
         font-size: 72px;
         font-weight: 900px;
         margin: 32px 0;
     }
+
     .btn-lg {
         background: $btn-bg;
         color: $btn-color;
         font-size: 14px;
         margin: 56px 0;
         padding: 24px 56px;
-        border-radius: 0  !important;
+        border-radius: 0 !important;
         letter-spacing: 5px;
+
         &:focus {
             outline: none !important;
             box-shadow: none !important;
@@ -192,16 +211,19 @@ body {
 .right-col {
     margin-top: -20%;
     margin-left: -2px;
-    .bio-div{
+
+    .bio-div {
         margin: 0 0 64px 0;
     }
-    .title  {
+
+    .title {
         font-weight: 12px;
         color: $label-color;
         font-weight: 500;
         letter-spacing: 3px;
         margin-bottom: 12px;
     }
+
     .info {
         font-size: 18px;
         color: $my-black;
@@ -218,12 +240,3 @@ body {
 .artist-image img {
     width: 68%;
 }
-
-
-
-
-
-
-
-
-
